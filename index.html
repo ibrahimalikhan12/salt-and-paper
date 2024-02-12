@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">  
+</head>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAWwAAACKCAMAAAC5K4CgAAAAxlBMVEX///8CAAAAAADtHCQBAAD++fnsCRXtAAb1hYn84eHtFyD93+DvOj/60tPsAADe3t5vb29KSUm/vr5ZWFjV1dWYl5d2dXWJiYnIx8cnJydOTk739/ceHR18e3s4Nja4uLjs6+ujoqIxLy/97O3wQ0n3sLHtDhn+8/MXFhbxWFyura2TkpLw8PD5vL76w8XEw8P1eX71io33oKNdXV3uJy72lJdAPz/zb3PwTFD3pafxXWH0fYHwRkzvOkD81tf4uLrvLjXxZmpCpbowAAAU40lEQVR4nO2diUO6TBPHEQR0VTSztKy0VDxS0/I2E///f+qdvRcwk05/z8v3OUrO2c8OM7MLhqa1M+lYvyJT01qOHesX5HgNgG0bsX5BqIlhW39txv+HKGzHivUb2gDs3DoV6zc0bWuaGeuXpMWKFStWrFixYsWKFStWrFixYsWKFStWrFj/lqql3gVWr957vAjosfbX1tVCNl30+pqWv2cf7p/q1b+28WhVLnWmvNbTQ3r5a/sKYZtmeU0rKp8Tl0/9vzbzGNUfsbFJ+Ee/gI/3egJ+xf/S/5J64a8tLOhJYU4CK6mfAeynG51+BGGfePprOz9W/UXXGVydmFvQOezEacFOCNiJIGxYr+ud+7829CNVKWsKu4eX1GfUz/8p2MRQ/fGvLf1AOGpwc1l0Ll3p/yDshPCWk1Vel7DhSqyThRUSw/nyU4CdOBL2Vf2vbT2kgq6aywuPC13/Oc82G1TtCEYe6dlJ/fZ7bf1Wle64vSRu86hXvRS0vx/2kj45a22P3iMC7Fnpe439TvV0n2cn9BtaP9Wv+ZX77bBNjz5qODr+IaGjYUMg/PMR2Pu6CEW9Tp2sKN3wWH4c7FJRqhJcmVcJ5BwCe5I+3srjYSf0y5MdS/Yvw75xRa0tMp8/MkGqg7zrQHvzZLDEtSKsrecIZh6dICGOnG6K7J+Ho55eputYkjzSs6HXiPD2537Y+ZmujDYyWfBqA62OT49RPDvJC6oTVBg2tCNRJOuqbCR5NGx+nADs+pmuwn5GxLOHUcz8b8AGoCFzIcmwSQZSFkaGHfDsOg4sEnZj5WLHnkYyMwLshB7KGCejUILEP/VEnays4yT5Rc/O3+kJFfaQ+DX+0kMERYJ9uuXI/T7YkBJlkjwyQV7KElKFnT/XEypsc+1CyHYG0ayMkCBPGba01wdbL1NeUIZ/KYzgeO2D3cB+7e4iWvkf8ezAcD0hRpIMTxlgfT6MAGtCRsKe4m+nbSKU2MzICLBPeFb7no/LfWYn9QQd9vZnX4Bdf6E9qcBuQi3iRimxiSLBPuHxunajB82lrZlRYvmO/tkwgu9KsKjEYUN6nKBV5C/z/DdKP9CTGCmqZoOHvFBkMG7/nGdDDEkmA7BH4NgoF9nGKLBPdwSJVd4HmyRJur6nwq7n6c98rdfrFfNyRagaqdNsQGEXar0nWPj2igwrhTfv4/254MLP45+19yLA8dWIKKTAgFIdjlus1JUD1e/lWe/hCKXgSSvKBj3Y86nXe8pre1V/6j3hO/z3NeVOc1HZnWTqHnsSgKkauOcoL0g6ktRuxd31x/Oz2fllXitfzyC66Dez87KE7Q8j/UtdwMZuqZ+D6Vuo+zxSYpfulLmUW5I6dL1z91LeO40UZdaP3qvpvbxcX4H9j52H63NZ5ZfUG/RFkv/hpAXJu6ysv6lo1Wv4cfZyG7px3y+/nF1hL6zBEa4Loj+ulf2viMdhnckKKT/T93g2HkmylrM7e6UZO0oPz5vo4kMANvHsfoElXjZzq+vnea2xsFyXjtODsOUB93l3hPlsvLzPkNU4vCteoeyBTfTAaamwrwD2Gfu94HPv/jlbqvEnPx4pqqoK+0arnxMKunpzFN8F2wM7qd+pp+jfsStAhxFxQadDeRGP/bAxazU6wafrvJaez+fTNoctT3PLR7LEsD20j78HiVtVxC3Gt38p7CT7lcKWowoGm7YoIUpd4SIMNmtlRzGreKeLoXWP3K7V9cs+g52Q++MIzebyruQkwr0eCork/rpvcvhRHAdolhJiApZGG18YMSvlcqGjxOzzcvm+r5ntdptVIvthk+Od1T8NGxrV154S7MEXBpt2QvF92LQVF+/Cpls/CNq1G34CBpuc4CIMuy5vdymuXS3reypWcQiqmYR98yQqRtiGlC2hBFm5UmCHHugIw+a779n46ASJL4vKAwuKDDZbM8sfgE1OW6GwFVgCtu8yLwnPpLB5b1VCsPO8UbD3Ofb8R+JHIsQGwolyl8m8E52OA/WDQqcX9GwC++ZzsBP6bShJHuPZ2C5IifVrflrVs+Go5cOwE/p1/13PpoejxUAfFiXZyE94NoHih53UHyoK7BnmXLgkh8h39g3b8XUprp476dkEtozR99qeOvvzsIldkWHDWe5KYkQcgI3X5j+AnagdhE1p0umiPZ5Nj+fz7IeSgA2b4q68ZZGioj4/In9CkOBNn3E7kjiMqLCxK34j7JtQYfsRbFYbQHuqD4prKbCZSxyAnSQJ6gBseoT6OX9WLwCbPOEUjNmcdZJSvqU9CmE/oRxXaZW4qmU4wzcZVdi4P74cRuTuiWNhFxO8ykrMXsrEKZ5YPA3BTuqdw7BpJx+ADaFAOOWeMAJXZD8Au3ouEttNhcImdkOn3MpRiPpTkKrz9Uk8sfaguOJ5fV+C/LRn74O9N0HC6I2plpdb8s18CZKNGg7CxkXnuwmS0NS4oXvDyEPFD/uGPDWZEGmNeLZ+Rn4TdbQftmz8PfcjXMaonn1e/4YwInc/2rP3aCbnMINhBM9QHYJNHhQ86Nk4f11L2EHP7vSCsDFtItb+W1z+02e2+p13RpJ8bqR3h6v7GSlZ34f95WrkC7CrVyHPlrBLH8G+/SBm42Z0BNwQbFgdhA1nvL2+LnNbCWw2fip29o0kk/wpKeio3sV9kYbwb/fsb4Etiqp9sCuHYZMMdxg2ZDn9/TACq8Owfbolg3dW4D3qoVYRs+T0UL7yVKvVqqcKu5gIwxZ6+sizZx/BftSq8jsQHLbUUbCTeBxPdLlv2A7RiKbQSuHhpgPCF+S3h5Fvidm1X4AtPifprF+H60jPTvBnhfnBA7DJ5FDpXJhdOY1q5AjYpZoQnlU+Arb8GISdJLADYaRal+ofB1sUJyUFomLGPfk6Am1DgsE+xWrkKQg7eNqverYas/c8dnCcZ0OooJOAvX03gPVzLX/tTzWnWY2EEmQE2J9LkJ+CzSYP5O12H+yZfJD7pzz7W2BrwdIvAmwyV3UQdqLHC/kvwsbTXnT7Pfck9bP+TKHxo2EkwnB9j4KDmkiwax8MavCU9uX7YaR+vGeLr3j075TOY/td1vUQbPn5dBJkaLguVfxg1u+Y4XoVVx/veXa+FwG2YFK6kRNbbL+KMoF1yglSq7AtQ7D7L5WPYH8wEUWnNeg3MvZ59nUk2CJJFjtiypb1eT4C7L9MkFr1RrTWD/uRlq+Hpljx5OVB2HhWg35XIwy7eotPFwF2Qr+j9+wv/MN2/aX/8579PbCVO6U+2Pf6R7CpkQfu1CTos1aBmwdcF3pE2HLO6UwJkqQG3xOzTzKM8IFCAPZ94mPY+D7PwTs1D+RQZJI65NkXelTYCfEYVP9B9WSA2b/+NxIkfVIgALuOB+2dgwkywW5Svp8gxTMW/hu+9AS3eFydjwg7qXeKisn0kOS+ce2n6+zvKf3oA15+2E8vmHVPOwAbzw71Kex3PDsp70NfMNrcs6v313zOOhJsfAryZIcctvOKUD7idNIxm9yGJJtT2NXH8xuMgs1G7IedFE9ivQNb933f8JE/nXsNl3yvcC7vD0SEDSVJVcKApic5qMsOu0B/phr5Ls/GMPAjTuRBKC7+eNl+2LDBC9tgL2x8YfiqvBp+Ko2Q4ALsDLasPN+BnRStwI9a4QqnmKBTr/qNzDK1QkfO+l0pc5cYtvqlUwq7oywJw35Q1l6qz/rpfN4gDFsx8yBsrUiffsO0cRuu6M3g/bAxyRdhXxg21tVtYDDaL8/oGUgw12cXzO3Fs4HksCG7LvWQEjWcD6kK6pN3/VLt8bIAgobeFqQeIdzdq5/xqfPqFqGvXuTLytoexiN1WQ9uvedvRB2ErfWfyqKvO2XZhiDsXqFwe1EryRMGE+Rj4bJ8XyyFn63N116EKT1py4XSjvAfiLg4uw7q7Lp+S5YWegdb9Hsqh4w8u/zItGq+d3FZKPd8oIKww2fye/YHZyj27mulf+LvgP2FvhV2rMOKYf+iYti/qBj2L+oI2IkY9jcp9uxfVAz7FxXD/kWVdPbXlfC0xDuwuWLYX1Twe5AhBb50GusLyitTF4V9X2/tqXMbp/z3HWLFihUrVqxYsWLFihUrVqxYsWLFihUrVqxYsWLFihUr1n9bjcFzaj0apaatqO+ZiBVF7XTKyzYnlmXM56uF5zhGK9rbgeAQjfTbj9j2D1pxUMOdkRo2zDlCr/j7f29jGzndiLTHnjP+EeMiaX0SVhzS0l2QPwuPDNSlS8aW4UZ7y1h6guxI74D7EZkT5Bz/nta/0NSmXtxw2EsmAB0y3FUk136GPf4+1A8Mw878tRGHNHBt+s6UoWM4zDkbXeR2I7EbW2gRNcx/v8Yu2nzCinbmR5UW7/8xu+6E/ja1DIdZimEHPbuRCdBvpNNyk5Tlrve9U8jEUpqVTpu+tcoKpe2BMwUO0sjI8zbS6stC16619m14HIntJPuTWogXAL05PDqvkGFzKz3kjnzNbS2yXrarNGTbhQWbLr4UcrvuKotQtouVUvoonVosXhegKd3RfG5usvJlcbCWv/RpCitYCGukmlnvWTrDcL6garH1I7CfvZjrbbERTXnbdbset2JNrIAS60PhENqy0Q/KzQrYKYvFjnYToYXoAWQo72Myc7Y3n29ca8EZpBeL9XS8M4wB7Didj6CjjNVoNJ/PhVOa28Vit2paFkI27c5BtruzkL3kx3h1bVo6DJurhYtcQnPo2Mh65UdJT73ubuXZFnInA9pfEzDEneDI3F47tossegmCFWv8FmJqBTV+ZH1MAr8Bs2UZPygkYWe9KfXFTBZZnMPIcpRixHx2V1C9DhDyWExPN+mrfudZ5sdDCzX9BW461RyamvnWGkFLCMaWNzBNV5Y5Qw9Z5HjP3ZY2nBi4F8ylZb0aoqNzzRT82h4uVy4iOcQcd3PawCJvv23vnOmyi9BEpMShgTz1nV2jjyGi34RtPnNTtxPDYUuHjjNWIsaYdL+W2SBKDTeTvqVz6fGdnUCMz7x6LJhubUQctYU7pg2+xN/N1wJOuIOWC1idaZKubtmLTDrDa8ihxcKJOXfJuyrbo3UbX3fGBCztTqDKmyJkCNhLC/nS+qnBlpq6hkXNHhjeUlmxdDZkefoVeZRxxmHVbJphMVOuO1czX8aY8MSVstAKLxnhzsDlJUf5bLkrQJPDa7UchFvwb18nbx0e3xsGcnHEGZDgP7VQ1tTmG9xTzwiJt1iaY8vyWXGysM21C0vT6XRm6u3UiJCbIIo+M+Ht2tru3LdzI0thiM+vTov/nqW5tkEcH8pLxCse8FaMNkd6BeJQNtcwUkptkXNEgMg49J1+tPToQkzRti5pAu5lvk+j67op1ayThY3fTm28vi66C3va9i23FhTx0LLXHAMyfG/7TdssLlOZKb4P7G8bthzUzV3k8X2ggJFv+1zaaNUeLZQzpxe2cHPoI1eugqSYamyIBzR2riUOkoaWqZfk6cJ+2yDruZEZvoLbqNF3YDOfNT2Lh2EYm6OmegSgP1GC5cCwRH7F1bu8tMHNV+zXZwtNRC+Ya8udD5FyYogJcvUGwrtc5Rh2azwiB31rsiKGWmF4vgr9ZGEPIWRjs1uG4Sivl21DyUCCSmZhy+SzhMH5qzIuBnCeJAqXMy9btLcJMhy54QTZ7OBpiAwbEa5w3bmbq1dLbuKKN68uLUP0EWFqtZrsaoNeEFMycHV4vjadLGzglcVmmwtkWNLDMBNoc/p54yjDlfYcukYZ4rzKEh20tcSn9hpOZshuMAw+XTWHKCKP0IDmNn3JbW1ZLGhpGTzcklFqbBmTbkueSnT6Dgbr/wRsc2SxF4EPwHHWYjluWWvUzTqLjG+c3bQMS6ZE3wdt4YoDbMdZMbulkSuCdWTr9RUpWRYnzlc1LZuWmKgxR1OoSmV8gI7ms5Mk+ogVhhHI20fDtn8XNlzHPNPAAMJQagkYlK3mLS2oVxZ2sCAJOvKApmPwWuRt08oiR0IcQUIgcT+zaSDDltkMIrulBC88FSmiz3L3bIhZG41MK/AJRrBa1h9QVjr+Zh0N27F+Ul4QdtpGWfYrDOasHW/bxAhcmlwZ7JksYcKQTvE88BMnw1hMYahkq05pkQrD3KX8aHZuINzuXIOlxDc0HENVKooROLFIv3iMJHoMz1r658LmR0DEs4SN3I/qra359WyLuX+4NmWIBNietlctQ4zdAAaSB8S7008prw2DDlmnNFZsZmTdTA+gS+Q+WRSIAAvEOjnTHLV3yJWDHTiveI82ZBRX9NgznNcPO30MicjvP/+6skhGijeIHXQO3nzGrwiXW6XVmfmuxUoC7Jc0uZH3pUJMJY02x+C6fNDRwEFi6BnkVcFL6Evuy+mciQecyPZfa1DsveKfmYVnNrrsLlAO/x8yuSjigS/JvubWJDV8U1pxujKnE/VuEgRMF1cK7fV4h+T4utHyTTbN2WSeZnKH3Y4xV4CNw0g75UzFoKPRxWXd1iUTRUucTReIJOQGqfda0Lv+6XNWWb8tJjktt6EzVjnSuVMYk/NLAnqsiQ1Y49OvIH5jzIOU/1AnpWGrNfKe05l0o8Fcog0RAo0bb6t54w3KhBVxpMayu8Cs01NKPJPlt2YANo6i6alBeiwFyW7dyM3xPEe661qwMLcgndGCOmKZHpMkCZF3jKs6MtsBcWjiJ4QL0G1j+4ovuAGMoYZ4JouM2KGXxIjplYyRGnM8PYVhj+DD1Atn85PRAHKya2Q9z5uItJiDggRlDfAgM2XDaHHcmq68Db5W8WvDvfUwnV5uNiLk4mw22nkGvQQyDhwxOyF+n1647m6YYu0fQCdOPIt0HoximsMxnfFq72ArfxZJ4Wos65ILDmC74+GKdLWWsxASOXEBnTR83tCyE64oYzT3kG8i4bS0dSCjW5Zt205XRuTcxrazxIEa44ntOM5kxyqzqefiz85CqdQGLuztrXlXrZFtW3TYYY5hjTNi0cccQXkwoVMvY8d2rNUbOxuyAu5odsEkg86INVawrcFmbMDejZITwe4uC3M5hK0YnXAM0YaDwWC73bZaraUakN9aLd4kCDOt7VAkndx2u2y1Br42DWALpdDGH/ncHhxZuloGDsWHKvhX5s0NMCHIKA3rB6YwRhw+sx1IWzR8dHFJDFvLVnjqONYp6X9uXrIu/UxbpgAAAABJRU5ErkJggg==
+            " alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Publication</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Branches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">feeget a franchiodback</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><i class="fa-solid fa-cart-shopping"></i>
+                <a class="nav-link" href="#"><i class="fa-solid fa-magnifying-glass"></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"> <li class="nav-item">
+                    </a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+   <!-- yahan dusri navbar banegi -->
+
+   <!-- <div class="border border border-secondry"> box 1</div>
+   <div class="border border border-secondry"> box 2</div>
+   <div class="border border border-secondry"> box 3</div>
+   <div class="border border border-secondry"> box 4</div>
+   <div class="border border border-secondry"> box 5</div>
+   <div class="border border border-secondry"> box 6</div>
+   <div class="border border border-secondry"> box 7</div> -->
+   <div class="main-popular-box">
+    <div class="popular-box">
+        <img src="https://muzammil2222.github.io/etsy-website/image/il_340x270.5676169262_juuk.jpg" alt="">
+        <h3>
+            Custom Book Stamp | Rubber Stamp | Personalized Stamp for Book Lovers | Wood or Self Inking Option
+        </h3>
+        <div class="box-pop-inner">
+           <img src="https://muzammil2222.github.io/etsy-website/image/download.png" alt="">
+           <p>(48,100)</p>
+        </div>
+        <div class="box-pop-inner-two">
+            <span>USD 8.99</span>
+            <p><del>USD 11.99</del></p>
+         </div>
+    </div><!--popular-box-->
+    <div class="popular-box">
+        <img src="https://muzammil2222.github.io/etsy-website/image/22.avif" alt="">
+        <h3>
+            Custom Book Stamp | Rubber Stamp | Personalized Stamp for Book Lovers | Wood or Self Inking Option
+        </h3>
+        <div class="box-pop-inner">
+           <img src="https://muzammil2222.github.io/etsy-website/image/download.png" alt="">
+           <p>(48,100)</p>
+        </div>
+        <div class="box-pop-inner-two">
+            <span>USD 8.99</span>
+            <p><del>USD 11.99</del></p>
+         </div>
+    </div><!--popular-box-->
+    <div class="popular-box">
+        <img src="https://muzammil2222.github.io/etsy-website/image/44.avif" alt="">
+        <h3>
+            Custom Book Stamp | Rubber Stamp | Personalized Stamp for Book Lovers | Wood or Self Inking Option
+        </h3>
+        <div class="box-pop-inner">
+           <img src="https://muzammil2222.github.io/etsy-website/image/download.png" alt="">
+           <p>(48,100)</p>
+        </div>
+        <div class="box-pop-inner-two">
+            <span>USD 8.99</span>
+            <p><del>USD 11.99</del></p>
+         </div>
+    </div><!--popular-box-->
+    <div class="popular-box">
+        <img src="https://muzammil2222.github.io/etsy-website/image/44.avif" alt="">
+        <h3>
+            Custom Book Stamp | Rubber Stamp | Personalized Stamp for Book Lovers | Wood or Self Inking Option
+        </h3>
+        <div class="box-pop-inner">
+           <img src="https://muzammil2222.github.io/etsy-website/image/download.png" alt="">
+           <p>(48,100)</p>
+        </div>
+        <div class="box-pop-inner-two">
+            <span>USD 8.99</span>
+            <p><del>USD 11.99</del></p>
+         </div>
+    </div><!--popular-box-->
+    <div class="popular-box">
+        <img src="https://muzammil2222.github.io/etsy-website/image/33.avif" alt="">
+        <h3>
+            Custom Book Stamp | Rubber Stamp | Personalized Stamp for Book Lovers | Wood or Self Inking Option
+        </h3>
+        <div class="box-pop-inner">
+           <img src="https://muzammil2222.github.io/etsy-website/image/download.png" alt="">
+           <p>(48,100)</p>
+        </div>
+        <div class="box-pop-inner-two">
+            <span>USD 8.99</span>
+            <p><del>USD 11.99</del></p>
+         </div>
+    </div><!--popular-box-->
+</div><!--main-popular-box-->
+</div><!--main-popular-->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
